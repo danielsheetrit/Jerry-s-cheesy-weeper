@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="css/img/icon.png" rel="icon" type="image/x-icon" />
+    <title>JERRY's cheesy weeper</title>
+
+</head>
+
+<body onload="init()">
+    <div class="header"><span>JERRY's </span> cheesy weeper.</div>
+
+    <div class="lives-wraper">
+        <span class="lives-left">Lives-left:</span>
+        <span class="lives-text"></span>
+    </div>
+
+    <span class="click-up">click up here to change the name 👆</span>
+    <span class="best-score" onclick="playerName()"></span>
+    <span class="click-me">Click Me!</span>
+    <span class="your">Your Time:</span>
+    <span class="face" onclick="restart()"></span>
+    <span class="time">00:00</span>
+
+    <div class="box">🧀</div>
+
+    <div class="lvls-btns">
+        <button class="levels lvl1" onclick="levels(4)">Easy</button>
+        <button class="levels lvl2" onclick="levels(8)">Medium</button>
+        <button class="levels lvl3" onclick="levels(12)">Hard</button>
+    </div>
+
+    <div class="board-wraper"></div>
+
+    <script src="js/util.js"></script>
+    <script src="js/globals.js"></script>
+    <script src="js/game.js"></script>
+</body>
+
+</html>
